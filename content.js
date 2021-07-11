@@ -35,13 +35,13 @@ if (localStorage.getItem("EmailFrontendTool_Switch") === "on") {
 
   let script = document.createElement("script");
   script.setAttribute("type", "text/javascript");
-  script.setAttribute("src", "https://alexanderlandberg.dk/assets/scripts/email-frontend-tool.js");
+  script.setAttribute("src", "https://alexanderlandberg.github.io/email-frontend-tool/email-frontend-tool.js");
   head.appendChild(script);
 
   let style = document.createElement("link");
   style.setAttribute("type", "text/css");
   style.setAttribute("rel", "stylesheet");
-  style.setAttribute("href", "https://alexanderlandberg.dk/assets/scripts/email-frontend-tool.css");
+  style.setAttribute("href", "https://alexanderlandberg.github.io/email-frontend-tool/email-frontend-tool.css");
   head.appendChild(style);
 }
 
@@ -84,13 +84,13 @@ if (localStorage.getItem("BannerTool_Switch") === "on") {
 
   let script = document.createElement("script");
   script.setAttribute("type", "text/javascript");
-  script.setAttribute("src", "https://alexanderlandberg.dk/assets/scripts/banner-visualiser.js");
+  script.setAttribute("src", "https://alexanderlandberg.github.io/banner-visualiser/banner-visualiser.js");
   head.appendChild(script);
 
   let style = document.createElement("link");
   style.setAttribute("type", "text/css");
   style.setAttribute("rel", "stylesheet");
-  style.setAttribute("href", "https://alexanderlandberg.dk/assets/scripts/banner-visualiser.css");
+  style.setAttribute("href", "https://alexanderlandberg.github.io/banner-visualiser/banner-visualiser.css");
   head.appendChild(style);
 }
 
