@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+        body {
+            color: #000;
+            margin: 0;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        #tool_wrapper_outer {
+            display: flex;
+        }
+
+        .tool_wrapper {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            font-family: 'Bungee Shade', cursive;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .extra {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            margin: 10px;
+        }
+
+        h2,
+        .extra {
+            pointer-events: none;
+        }
+
+        #EFT {
+            background-color: mediumaquamarine;
+            background-image: url(https://media0.giphy.com/media/102aGneD3xSJzi/giphy.gif?cid=ecf05e47uu47jmjlh88kpazcemp3kd39fot0y4b40evangf2&rid=giphy.gif);
+            opacity: 0.5;
+        }
+
+        #BT {
+            background-color: #caa1d8;
+            background-image: url(https://media0.giphy.com/media/5xtDarIELDLO7lSFQJi/giphy.gif?cid=ecf05e47z5gkibt38ml0adxz77stk3ql4cb58fu6fllxcewt&rid=giphy.gif);
+            background-size: 140%;
+            background-position: top right;
+            opacity: 0.5;
+        }
+
+        #EFT.on,
+        #BT.on {
+            opacity: 1;
+        }
+
+
+        #refresh {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: fit-content;
+            padding: 5px;
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+
+            opacity: 0;
+        }
+
+        #refresh.on {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="tool_wrapper_outer">
+            <div id="EFT" class="tool_wrapper">
+                <h2>Email Frontend Tool</h2>
+                <p class="extra">
+                    up down left right
+                </p>
+            </div>
+            <div id="BT" class="tool_wrapper">
+                <h2>Banner Tool</h2>
+                <p class="extra">
+                    setTimeout(() => {
+                    addTimelineViz(mytl);
+                    }, 100);
+                </p>
+            </div>
+        </div>
+        <div id="refresh">Refresh</div>
+    </div>
+    <script src="popup.js" charset="utf-8"></script>
+</body>
+
+</html>
