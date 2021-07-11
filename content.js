@@ -81,9 +81,16 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
 if (localStorage.getItem("BannerTool_Switch") === "on") {
   let head = document.querySelector("head");
+
   let script = document.createElement("script");
   script.setAttribute("type", "text/javascript");
-  script.setAttribute("src", "https://alexanderlandberg.dk/assets/scripts/banner-superscript_master_v1.0.js");
+  script.setAttribute("src", "https://alexanderlandberg.dk/assets/scripts/banner-visualiser.js");
   head.appendChild(script);
+
+  let style = document.createElement("link");
+  style.setAttribute("type", "text/css");
+  style.setAttribute("rel", "stylesheet");
+  style.setAttribute("href", "https://alexanderlandberg.dk/assets/scripts/banner-visualiser.css");
+  head.appendChild(style);
 }
 
