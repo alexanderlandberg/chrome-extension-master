@@ -1,8 +1,8 @@
 {
-    "name": "MASTER",
+    "name": "Email Frontend Tool",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "MASTER",
+    "description": "Javascript plugin for developing HTML email, with a specific framework. @Merkle @AlexanderLandberg",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
@@ -16,9 +16,6 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "MASTER"
-    },
-    "permissions": [
-        "storage"
-      ]
+        "default_title": "Email Frontend Tool"
+    }
 }
